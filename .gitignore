@@ -1,0 +1,11 @@
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Editores
+.vscode/settings.json
+*.swp
+
+# Dependencias (se adicionar build futuramente)
+node_modules/
+dist/

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores - ONG Bem-Te-Vi</title>
+    <link rel="stylesheet" href="assets/Style.css/style.css">
+</head>
+<body>
+    <header>
+        <div class="brand" aria-label="Logo da ONG Bem-Te-Vi">
+            <img src="assets/Imgs/logo bemtevi.svg" alt="Logo da ONG Bem-Te-Vi" class="brand-logo">
+            <div class="logo">
+                <h1>ONG Bem-Te-Vi</h1>
+            </div>
+        </div>
+
+        <button class="hamburger-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="hamburger-lines"></span>
+        </button>
+
+        <nav class="nav-container" aria-label="Navegação Principal">
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Projetos.html">Iniciativas</a></li>
+                <li><a href="Cadastro.html" aria-current="page">Seja um de nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-cadastro">
+        <div id="formAlert" class="alert alert--info" hidden role="status" aria-live="polite"></div>
+
+        <section>
+            <h2>Faça parte da nossa rede</h2>
+            <p>Preencha o formulário abaixo para se registrar como voluntário ou colaborador.</p>
+
+            <form id="formCadastro" novalidate>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" maxlength="14">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp:</label>
+                        <input type="text" id="telefone" name="telefone" required placeholder="(00) 00000-0000" maxlength="15">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="9">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required placeholder="Digite sua cidade">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required placeholder="UF" maxlength="2">
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h3>ONG Bem-Te-Vi</h3>
+                <p>Transformando vidas por meio de educação, solidariedade e cidadania.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="Projetos.html">Projetos</a></li>
+                    <li><a href="Cadastro.html">Seja voluntário</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li>(11) 99999-0123</li>
+                    <li>contato@ongbemtevi.org.br</li>
+                    <li>Rua Bem-Te-Vi, 123</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 ONG Bem-Te-Vi. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>
